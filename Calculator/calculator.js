@@ -5,6 +5,10 @@ app.get("/" , function(req , res){
     res.sendFile(__dirname + "/index.html");
 });
 
+app.post("/" , function(req , res){
+    res.send("Thanks for yout post");
+});
+
 app.listen(3000, function(){
     console.log("server started for  port 3000");
 });
